@@ -2,6 +2,8 @@
 public class Aluno {
 
 		private String nome;
+		private int idade;
+	private ListaLigada proximo;
 		
 		public String getNome() {
 			return nome;
@@ -23,3 +25,4 @@ public class Aluno {
 		}
 
 }
+

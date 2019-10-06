@@ -1,20 +1,26 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Teste {
 
 	public static void main(String[] args) {
 
-		ArrayList vetorSemGenerics = new ArrayList();
-		ArrayList<Aluno> vetorComGenerics = new ArrayList<Aluno>();
+		Aluno maria = new Aluno();
+		maria.setNome("Maria");
 		
-		Aluno aluno = new Aluno();
+		Aluno manoel = new Aluno();
+		manoel.setNome("Manoel");
 		
-		vetorSemGenerics.add(aluno);
-		vetorComGenerics.add(aluno);
+		Aluno joaquim = new Aluno();
+		joaquim.setNome("Joaquim");
 		
-		Aluno A1 = (Aluno) vetorSemGenerics.get(0);
+		LinkedList listaLigada = new LinkedList();
 		
-		Aluno a2 = vetorComGenerics.get(0);
+		listaLigada.add(maria);
+		listaLigada.add(manoel);
+		listaLigada.add(1, joaquim);
+		
+		for (int i = 0; i < listaLigada.size(); i++) {
+		System.out.println(listaLigada.get(i));
+		}
 	}
-	
 }
